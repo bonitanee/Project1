@@ -1,0 +1,136 @@
+html, body {
+    		height: 100%;
+    		margin: 0;
+    	}
+
+
+.container{
+	width: 100%;
+}
+h1 {
+	float: left;
+	font-size: 40pt;
+	font-family:Arial;
+	margin: 3%;
+	color: white;
+}
+
+h2 {
+	font-family:Arial;
+	font-size: 30pt;
+	text-align: center;
+}
+
+p {
+	font-size: 14pt;
+	text-align: center;
+}
+
+span {
+	font-color: green;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-right: 2%;
+}
+li {
+  float: right;
+  margin: 5px 10px;
+  font-size: 14pt;
+}
+
+a {
+	color: white;
+	font-family:Arial;
+	font-size: 14pt;
+}
+
+a:hover {
+    font-size: 16pt;
+    font-weight: bold;
+}
+
+nav {
+	background-color: #3DA859;
+	height: 6%;
+}
+
+nav h3 {
+	float: left;
+	margin: 5px 15px;
+	color: white;
+	font-family:Arial;
+}
+
+article {
+	background-image: 
+}
+
+footer {
+	clear: both;
+	height: 10%;
+	background-color: black;
+}
+
+footer p {
+	color: white;
+	font-family:Arial;
+	display: inline;
+}
+
+.buttons{
+	height: 100px;
+	margin: 20px
+}
+
+.ClothingPic{
+	height: 80%;
+	margin: 5%;
+	float: left;
+}
+
+.first {
+	position: relative;
+	clear: left;
+	 background: #969696 url('images/Green.jpg');
+	 background-size: cover;
+	 margin-bottom: 7%;
+}
+
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+
+.blob{
+	background-image: url("images/green_blob.jpg");
+	background-position: bottom;
+	float: left;
+	background-repeat:no-repeat;
+	margin-left: 5%;
+}
+
+.secondtext {
+	float: left;
+	text-align: center;
+}
+
+.explainer_video {
+	float: right;
+	margin-right: 5%;
+	margin-bottom: 5%;
+}
+
+.footercenter{
+	background-color: black;
+	padding: 5%;
+	padding-left: 30%;
+}
+
+
