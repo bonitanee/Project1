@@ -1,14 +1,15 @@
 html, body {
     		height: 100%;
     		margin: 0;
+    		width: 100%;
     	}
 
 
 .container{
 	width: 100%;
 }
+
 h1 {
-	float: left;
 	font-size: 40pt;
 	font-family:Arial;
 	margin: 3%;
@@ -36,7 +37,6 @@ ul {
   margin-right: 2%;
 }
 li {
-  float: right;
   margin: 5px 10px;
   font-size: 14pt;
 }
@@ -55,13 +55,18 @@ a:hover {
 nav {
 	background-color: #3DA859;
 	height: 6%;
+	width: 100%;
 }
 
 nav h3 {
-	float: left;
-	margin: 5px 15px;
+	vertical-align: center;
+	margin: 0px;
 	color: white;
 	font-family:Arial;
+}
+
+nav h3 a{
+		text-decoration: none;
 }
 
 article {
@@ -69,7 +74,6 @@ article {
 }
 
 footer {
-	clear: both;
 	height: 10%;
 	background-color: black;
 }
@@ -80,6 +84,12 @@ footer p {
 	display: inline;
 }
 
+.nav-right {
+	display: flex;
+	align-items: flex-end;
+	text-align: center;
+}
+
 .buttons{
 	height: 100px;
 	margin: 20px
@@ -88,41 +98,27 @@ footer p {
 .ClothingPic{
 	height: 80%;
 	margin: 5%;
-	float: left;
 }
 
 .first {
 	position: relative;
-	clear: left;
 	 background: #969696 url('images/Green.jpg');
 	 background-size: cover;
 	 margin-bottom: 7%;
 }
 
-.clearfix:after {
-     visibility: hidden;
-     display: block;
-     font-size: 0;
-     content: " ";
-     clear: both;
-     height: 0;
-     }
-
 .blob{
 	background-image: url("images/green_blob.jpg");
 	background-position: bottom;
-	float: left;
 	background-repeat:no-repeat;
 	margin-left: 5%;
 }
 
 .secondtext {
-	float: left;
 	text-align: center;
 }
 
 .explainer_video {
-	float: right;
 	margin-right: 5%;
 	margin-bottom: 5%;
 }
