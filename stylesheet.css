@@ -28,7 +28,7 @@ p {
 }
 
 span {
-	font-color: green;
+	color: green;
 }
 
 ul {
@@ -56,10 +56,12 @@ nav {
 	background-color: #3DA859;
 	height: 6%;
 	width: 100%;
+	display: flex;
+	flex-direction: row;
 }
 
 nav h3 {
-	vertical-align: center;
+	vertical-align: middle;
 	margin: 0px;
 	color: white;
 	font-family:Arial;
@@ -70,7 +72,7 @@ nav h3 a{
 }
 
 article {
-	background-image: 
+	background-image: url('images/Green.jpg');
 }
 
 footer {
@@ -86,7 +88,7 @@ footer p {
 
 .nav-right {
 	display: flex;
-	align-items: flex-end;
+	align-self: flex-end;
 	text-align: center;
 }
 
@@ -123,10 +125,16 @@ footer p {
 	margin-bottom: 5%;
 }
 
+.circle{
+    border-radius: 50%;
+}
+
 .footercenter{
 	background-color: black;
 	padding: 5%;
 	padding-left: 30%;
 }
 
-
+.mission{
+	background: #969696;
+}
