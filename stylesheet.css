@@ -3,7 +3,7 @@
     src: url('./Fonts/ProximaNova/ProximaNova-Regular.otf') format('opentype');
     font-weight: normal;
     font-style: normal;}
-    
+
 @font-face {
         font-family: 'ProximaNova-Bold';
         src: url('./Fonts/ProximaNova/ProximaNova-Bold.otf') format('opentype');
@@ -31,6 +31,7 @@ h1 {
 	font-size: 28pt;
 	font-family:Arial;
 	color: white;
+	font-weight: normal;
 }
 
 h2 {
@@ -202,6 +203,7 @@ footer p {
 	background-size: cover;
 	display: flex;
 	justify-content: center;
+	flex-wrap: wrap;
 	padding: 5%;
 }
 
@@ -232,10 +234,16 @@ a.futureEmail{
 	border-radius: 150px;
 	-webkit-border-radius: 150px;
 	-moz-border-radius: 150px;
+  	-webkit-transition: -webkit-transform .8s ease-in-out;
+  	transition: transform .8s ease-in-out;
+}
+.circle:hover {
+    -webkit-transform: rotateY(180deg); /* Safari */
+    transform: rotateY(180deg);
 }
 
 .opportunityContainer{
-	margin: 20px;
+	margin: 30px;
 }
 
 .opportunityTextCenter{
@@ -244,7 +252,33 @@ a.futureEmail{
 
 h3.opportunityTextCenter{
 	font-family: 'ProximaNova-Bold';
+	width: 60%;
 }
+
+/******************************************************************************
+ 	Fashion
+******************************************************************************/
+
+	.statement{
+		margin-bottom: 20px;
+	}
+
+	.lastThing{
+		width: 80%;
+		display: flex;
+		justify-content: center;
+	}
+
+	.badtaste{
+		font-family: 'ProximaNova-Regular';
+		margin: 30px;
+		color: white;
+	}
+
+
+/******************************************************************************
+Break Points
+******************************************************************************/
 
 @media (max-width: 700px) {
 
@@ -271,15 +305,6 @@ h3.opportunityTextCenter{
 		padding-top: 25px;
 	}
 
-	.videoContainer{
-		width: 100%;
-	}
-
-	.blob{
-		margin: 5% auto 8% auto;
-		width: 100%;
-	}
-
 	.storeButtonContainer{
 		display: flex;
 		justify-content: center;
@@ -294,5 +319,23 @@ h3.opportunityTextCenter{
 	.androidStoreButtonContainer{
 		padding: 5%;
 	}
+
+
+
+/******************************************************************************
+Break Points // Section 2
+******************************************************************************/
+
+	.videoContainer{
+		width: 100%;
+	}
+
+	.blob{
+		margin: 5% auto 8% auto;
+		width: 100%;
+	}
+
+
 }
+
 
