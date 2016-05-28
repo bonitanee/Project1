@@ -2,8 +2,14 @@
     font-family: 'ProximaNova-Regular';
     src: url('./Fonts/ProximaNova/ProximaNova-Regular.otf') format('opentype');
     font-weight: normal;
-    font-style: normal;
-}
+    font-style: normal;}
+    
+@font-face {
+        font-family: 'ProximaNova-Bold';
+        src: url('./Fonts/ProximaNova/ProximaNova-Bold.otf') format('opentype');
+        font-weight: normal;
+        font-style: normal;
+    }
 
 * {
 	margin: 0;
@@ -181,15 +187,15 @@ footer p {
 	width: 100%;
 }
 
-.circle{
-    border-radius: 50%;
-}
-
 .footercenter{
 	background-color: black;
 	padding: 5%;
 	padding-left: 30%;
 }
+
+/******************************************************************************
+	About us (Page)
+******************************************************************************/
 
 .mission{
 	background: url("images/Green.jpg");
@@ -201,13 +207,47 @@ footer p {
 
 .statement{
 	max-width: 900px;
+	padding: 5%;
 }
 
-a#futureEmail{
+a.futureEmail{
 	color: #3DA859;
 }
 
+.futureHere{
+	padding: 0 5% 3% 5%;
+}
+
+.opportunitiesContainer{
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	text-align: center;
+}
+
+.circle{
+	 width: 150px;
+	height: 150px;
+	border-radius: 150px;
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+}
+
+.opportunityContainer{
+	margin: 20px;
+}
+
+.opportunityTextCenter{
+	margin: 20px 0;
+}
+
+h3.opportunityTextCenter{
+	font-family: 'ProximaNova-Bold';
+}
+
 @media (max-width: 700px) {
+
 	.first {
 		flex-direction: column;
 		text-align: center;
