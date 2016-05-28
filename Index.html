@@ -13,8 +13,8 @@
 
 <body>
 	<nav>
-		<h3>Closet <em>Relay</em></h3>
 		<ul class="nav-right">
+			<li><a href="index.html">Closet <em>Relay</em></a></li>
 		    <li><a href="about.html">About us</a></li>
 		    <li><a href="fashion.html">Sustainable Fashion</a></li>
 		    <li><a href="#">How it works</a></li>
@@ -24,30 +24,66 @@
 	
 	<article>
 
-		<section>
-			<img class="ClothingPic" src="images/App_clothing_laptop.png" alt="An iPhone showing the Closet Relay App, in the background (behind the iPhone) there's pieces of women clothing representing the selection the app have to offer" title="Soooo much to choose from O_O"></div>
-			<h1 class="tagline">Start shopping <br> GREENER with <br> Closet <em>Relay</em></h1>
-			
-			<a href="https://itunes.apple.com/ca/app/closetrelay/id973773770?mt=8">
-				<img class="buttons" border="0" alt="Button to download the iOS/Apple version of the app" src="images/iOS_download_button.png" title="What are you waiting for? Download it now!">
-			</a>
-			
-				<img class="buttons" border="0" alt="Button to download the Android version of the app, unfortunately the Android version isn't out now" src="images/Android_download.png" title="Sooorrrryyyyyy, the Android verison is still in progress >.<"/>
+		<section class="first">
+			<!--<img 
+				src="images/App_clothing_laptop.png" 
+				srcset="images/App_clothing_laptop.png 1280w, images/App_clothing_tablet.png 640w, images/App_clothing_phone.png 320w"
+				sizes="(min-width: 36em) 33.3vw, 100vw"
+				alt="An iPhone showing the Closet Relay App, in the background (behind the iPhone) there's pieces of women clothing representing the selection the app have to offer" 
+				title="Soooo much to choose from O_O" 
+			/>-->
+			<div class="ClothingPicContainer">
+				<img
+					class="ClothingPic" 
+					src="images/App_clothing_laptop.png" 
+					alt="An iPhone showing the Closet Relay App, in the background (behind the iPhone) there's pieces of women clothing representing the selection the app have to offer"
+				/>
+			</div>
+			<div class="introText">
+				<div class="taglineContainer">
+					<h1 class="tagline">Start shopping <br> GREENER with <br> Closet <em>Relay</em></h1>
+				</div>
+				<div class="storeButtonContainer">
+					<div class="appleStoreButtonContainer">
+						<a 
+						href="https://itunes.apple.com/ca/app/closetrelay/id973773770?mt=8" 
+						target="_blank">
+							<img class="buttons" 
+							border="0" 
+							alt="Button to download the iOS/Apple version of the app" 
+							src="images/iOS_download_button.png" 
+							title="What are you waiting for? Download it now!"/>
+						</a>
+					</div>
+					<div class="androidStoreButtonContainer">
+						<img 
+							class="buttons" 
+							border="0" 
+							alt="Button to download the Android version of the app, unfortunately the Android version isn't out now" 
+							src="images/Android_download.png" 
+							title="Sooorrrryyyyyy, the Android verison is still in progress >.<"
+						/>
+					</div>
+				</div>
+			</div>
 		</section>
 
 		<section class="second">
+			<div class="videoContainer">
+				<video class="explainer_video" controls poster="images/ClosetRelayVideo.png">
+					<source src="video/ClosetRelayVideo.mp4" type="video/mp4">
+					<source src="video/ClosetRelayVideo.avi" type="video/avi">
+					<!-- All credit to Closet Relay -->
+				</video>
+			</div>
 
-			<video class="explainer_video" controls poster="images/ClosetRelayVideo.png">
-				<source src="video/ClosetRelayVideo.mp4" type="video/mp4">
-				<source src="video/ClosetRelayVideo.avi" type="video/avi">
-				<!-- All credit to Closet Relay -->
-			</video>
 			<div class="blob">
-			<h2 class="secondtext">Discover <br> amazing <br> clothing and <br> accessories</h2>
-			<p class="secondtext">Find a seller with unquie items in your size <br> in your neigbourhood</p>
+			<h2 class="secondtext">Discover <br> amazing <br> clothing and <br> accessories<br></h2>
+			<p class="secondtext"><br>Find a seller with unquie items in your size <br> in your neigbourhood</p>
 			</div>
 
 		</section>
+
 	</article>
 
 	<footer>
