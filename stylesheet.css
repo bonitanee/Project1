@@ -255,6 +255,7 @@ footer p {
 	color: white;
 	font-size: 40pt;
 	font-style: italic;
+	text-align: center;
 }
 
 .statement:first-of-type{
