@@ -1,19 +1,36 @@
-html, body {
-    		height: 100%;
-    		margin: 0;
-    		width: 100%;
-    	}
+@font-face {
+    font-family: 'ProximaNova-Regular';
+    src: url('./Fonts/ProximaNova/ProximaNova-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;}
 
+@font-face {
+    font-family: 'ProximaNova-Bold';
+    src: url('./Fonts/ProximaNova/ProximaNova-Bold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    width: 100%;
+    	}
 
 .container{
 	width: 100%;
 }
 
 h1 {
-	font-size: 40pt;
+	font-size: 28pt;
 	font-family:Arial;
-	margin: 3%;
 	color: white;
+	font-weight: normal;
 }
 
 h2 {
@@ -22,55 +39,56 @@ h2 {
 	text-align: center;
 }
 
+h3{
+	font-family: 'ProximaNova-Regular';
+}
+
 p {
 	font-size: 14pt;
 	text-align: center;
 }
 
 span {
-	font-color: green;
+	color: green;
 }
 
 ul {
-  list-style-type: none;
-  padding-left: 0;
-  margin-right: 2%;
+  	list-style-type: none;
+	padding-left: 0;
+	margin-right: 2%;
 }
+
 li {
-  margin: 5px 10px;
-  font-size: 14pt;
+	margin: 5px 10px;
+	font-size: 14pt;
 }
 
 a {
 	color: white;
-	font-family:Arial;
+	font-family: 'ProximaNova-Regular';
 	font-size: 14pt;
+	text-decoration: none;
 }
 
-a:hover {
+.hoverWhite {
     font-size: 16pt;
     font-weight: bold;
 }
 
 nav {
 	background-color: #3DA859;
-	height: 6%;
+	height: 12%;
 	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	font-family: 'ProximaNova-Regular';
+	flex-wrap: wrap;
 }
 
-nav h3 {
-	vertical-align: center;
-	margin: 0px;
-	color: white;
-	font-family:Arial;
-}
-
-nav h3 a{
-		text-decoration: none;
-}
-
-article {
-	background-image: 
+nav ul{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
 }
 
 footer {
@@ -84,34 +102,80 @@ footer p {
 	display: inline;
 }
 
-.nav-right {
-	display: flex;
-	align-items: flex-end;
-	text-align: center;
-}
-
 .buttons{
-	height: 100px;
-	margin: 20px
+	height: auto;
+	width: 100%;
 }
 
 .ClothingPic{
-	height: 80%;
-	margin: 5%;
+	max-height: 100%;
+	max-width: 100%;
+	/*height: auto;*/
+}
+
+.ClothingPicContainer{
+	text-align: center;
+	padding: 70px;
+} 
+
+.ClothingBgrnd {
+	background: url('images/App_clothing_laptop.png');
 }
 
 .first {
 	position: relative;
-	 background: #969696 url('images/Green.jpg');
-	 background-size: cover;
-	 margin-bottom: 7%;
+	background-image: url('images/Green.jpg');
+	background-size: cover;
+	/*margin-bottom: 7%;*/
+	display: flex;
+	flex-direction: row;
+	/*flex-wrap: wrap;*/
+	/*justify-content: space-around;*/
+	/*height: 100%;*/
+	align-items: center;
+}
+
+.first > div {
+	width: 50%;
+}
+
+.storeButtonContainer{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	width: 250px;
+}
+
+.appleStoreButtonContainer{
+	width: 50%;
+	padding-top: 30px;
+	padding-right: 5%;
+
+}
+
+.androidStoreButtonContainer{
+	width: 50%;
+	padding-top: 30px;
+
+}
+
+/******************************************************************************
+	Second Section (Video)
+******************************************************************************/
+.second {
+	padding-top: 5%;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
 }
 
 .blob{
-	background-image: url("images/green_blob.jpg");
+	background: url("images/green_blob.jpg");
 	background-position: bottom;
 	background-repeat:no-repeat;
 	margin-left: 5%;
+	margin-bottom: 5%;
+	width: 40%;
 }
 
 .secondtext {
@@ -119,14 +183,225 @@ footer p {
 }
 
 .explainer_video {
-	margin-right: 5%;
-	margin-bottom: 5%;
+	width: 100%;
 }
 
 .footercenter{
 	background-color: black;
 	padding: 5%;
 	padding-left: 30%;
+}
+
+.error-box {
+  background: #E74C3C;
+  border-radius: 2px;
+  color: #FFF;
+  display: none;
+  font-style: italic;
+  max-height: 100px;
+  padding: 1rem;
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 8px;
+}
+
+.form-email-input {
+  border: 0;
+  border-bottom: 2px solid #2980B9;
+  padding: 4px 8px;
+  outline: 0;
+  font-size: 14px;
+}
+
+.form-submit {
+  border: none;
+  background: #27AE60;
+  padding: 8px 16px;
+  color: #FFF;
+  cursor: pointer;
+  margin: 12px;
+  outline: none;
+}
+
+.error-show {
+  animation: pop-in 250ms ease;
+  display: block;
+}
+
+/******************************************************************************
+	About us (Page)
+******************************************************************************/
+
+.mission{
+	background: url("images/Green.jpg");
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	padding: 5%;
+	height: 50%;
+}
+
+.statement{
+	max-width: 900px;
+	padding: 5%;
+	display: none;
+	font-family: 'ProximaNova-Regular';
+	color: white;
+	font-size: 40pt;
+	font-style: italic;
+}
+
+.statement:first-of-type{
+	display: block;
+
+}
+
+a.futureEmail{
+	color: #3DA859;
+}
+
+.futureHere{
+	padding: 0 5% 3% 5%;
+}
+
+.opportunitiesContainer{
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	text-align: center;
+}
+
+.circle{
+	 width: 150px;
+	height: 150px;
+	border-radius: 150px;
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+  	-webkit-transition: -webkit-transform .8s ease-in-out;
+  	transition: transform .8s ease-in-out;
+}
+.circle:hover {
+    -webkit-transform: rotateY(180deg); /* Safari */
+    transform: rotateY(180deg);
+}
+
+.opportunityContainer{
+	margin: 30px;
+}
+
+.opportunityTextCenter{
+	margin: 20px 0;
+}
+
+h3.opportunityTextCenter{
+	font-family: 'ProximaNova-Bold';
+	width: 60%;
+}
+
+.opportunityTextP{
+	width: 150px;
+	text-align: left;
+	display: none
+}
+
+/******************************************************************************
+ 	Fashion
+******************************************************************************/
+
+.missionFashion{
+	background: url("images/Green.jpg");
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	padding: 5%;
+}
+
+.statementFashion{
+	max-width: 900px;
+	padding: 5%;
+	margin-bottom: 20px;
+}
+
+.lastThing{
+	width: 80%;
+	display: flex;
+	justify-content: center;
+}
+
+.badtaste{
+	font-family: 'ProximaNova-Regular';
+	margin: 30px;
+	color: white;
+}
+
+
+/******************************************************************************
+Break Points
+******************************************************************************/
+
+@media (max-width: 700px) {
+
+.first {
+	flex-direction: column;
+	text-align: center;
+}
+
+.second {
+	flex-direction: column;
+	text-align: center;
+}	
+
+h1{
+	font-size: 28pt;
+}
+
+.first > .introText {
+	width: 100%;
+}
+
+.ClothingPicContainer {
+	padding: 10px;
+	padding-top: 25px;
+}
+
+.storeButtonContainer{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+
+.appleStoreButtonContainer{
+	padding: 5%;
+}
+
+.androidStoreButtonContainer{
+	padding: 5%;
+}
+
+
+
+/******************************************************************************
+Break Points // Section 2
+******************************************************************************/
+
+.videoContainer{
+	width: 100%;
+}
+
+.blob{
+	margin: 5% auto 8% auto;
+	width: 100%;
+}
+
+
 }
 
 
