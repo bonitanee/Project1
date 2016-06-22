@@ -39,6 +39,32 @@ $(document).ready(function() {
       //if (email) {};
 });
 
+//ABOUT US PAGE
+
+//Change quotes 
+
+    var allQuotes = $("blockquotes");
+    var currentQuotes = 0;
+
+    function changeQuotes(){
+
+      $(allQuotes [currentQuotes]).fadeOut(200, function(){
+
+        if (currentQuotes == allQuotes.length - 1) {
+            currentQuotes = 0;
+        } else {
+            currentQuotes++;
+        }
+
+        $(allQuotes [currentQuotes]).fadeIn(200);
+        
+        });
+
+        
+
+//Sets timing for quote change
+
+    var quoteTimer = setInterval(changeQuotes, 3000);
 
     });
 

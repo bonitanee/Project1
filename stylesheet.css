@@ -22,7 +22,6 @@ html, body {
     width: 100%;
     	}
 
-
 .container{
 	width: 100%;
 }
@@ -245,11 +244,22 @@ footer p {
 	justify-content: center;
 	flex-wrap: wrap;
 	padding: 5%;
+	height: 50%;
 }
 
 .statement{
 	max-width: 900px;
 	padding: 5%;
+	display: none;
+	font-family: 'ProximaNova-Regular';
+	color: white;
+	font-size: 40pt;
+	font-style: italic;
+}
+
+.statement:first-of-type{
+	display: block;
+
 }
 
 a.futureEmail{
@@ -295,11 +305,28 @@ h3.opportunityTextCenter{
 	width: 60%;
 }
 
+.opportunityTextP{
+	width: 150px;
+	text-align: left;
+	display: none
+}
+
 /******************************************************************************
  	Fashion
 ******************************************************************************/
 
-.statement{
+.missionFashion{
+	background: url("images/Green.jpg");
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	padding: 5%;
+}
+
+.statementFashion{
+	max-width: 900px;
+	padding: 5%;
 	margin-bottom: 20px;
 }
 
